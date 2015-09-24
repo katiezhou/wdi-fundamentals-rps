@@ -78,13 +78,13 @@ function playToFive() {
         getWinner();
     }
     
-    if (winner === 'tie') {
+    	if (winner === 'tie') {
         console.log(playerMove + " (player) vs. " + computerMove + " (computer): Tie!");
-    } else if (winner === 'player') {
+    	} else if (winner === 'player') {
         console.log(playerMove + " (player) vs. " + computerMove + " (computer): Player wins!");
-    } else if (winner === 'computer') {
+    	} else if (winner === 'computer') {
         console.log(playerMove + " (player) vs. " + computerMove + " (computer): Computer wins!");
-    }
+    	}
 
     console.log("The score is now " + playerWins + " (player) to " + computerWins + " (computer).");
 }
