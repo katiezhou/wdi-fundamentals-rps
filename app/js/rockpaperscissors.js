@@ -77,9 +77,9 @@ function playToFive() {
         console.log(playerMove + " (player) vs. " + computerMove + " (computer): Player wins!");
     	} else if (winner === 'computer') {
         console.log(playerMove + " (player) vs. " + computerMove + " (computer): Computer wins!");
-    	}
 
     console.log("The score is now " + playerWins + " (player) to " + computerWins + " (computer).");
+}
     return [playerWins, computerWins];
 }
 
