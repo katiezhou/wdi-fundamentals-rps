@@ -80,7 +80,6 @@ function playToFive() {
     	}
 
     console.log("The score is now " + playerWins + " (player) to " + computerWins + " (computer).");
-}
     return [playerWins, computerWins];
 }
 
