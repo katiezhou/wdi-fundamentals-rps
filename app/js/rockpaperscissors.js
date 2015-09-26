@@ -20,6 +20,9 @@ function randomPlay() {
 ////////////////////////////////////////////////
 /*           Write Your Code Below            */
 ////////////////////////////////////////////////
+var winner;
+var computerMove;
+var playerMove;
 
 function getPlayerMove(move) {
     // Write an expression that operates on a variable called `move`
@@ -69,17 +72,21 @@ function playToFive() {
         playerMove = getPlayerMove();
         computerMove = getComputerMove();
         winner = getWinner(playerMove, computerMove);
-    }
-    
+
     	if (winner === 'tie') {
         console.log(playerMove + " (player) vs. " + computerMove + " (computer): Tie!");
     	} else if (winner === 'player') {
         console.log(playerMove + " (player) vs. " + computerMove + " (computer): Player wins!");
+	playerWins++;
     	} else if (winner === 'computer') {
         console.log(playerMove + " (player) vs. " + computerMove + " (computer): Computer wins!");
+	computerWins++;
+	}
 
     console.log("The score is now " + playerWins + " (player) to " + computerWins + " (computer).");
 }
     return [playerWins, computerWins];
 }
+
+playToFive();
 
